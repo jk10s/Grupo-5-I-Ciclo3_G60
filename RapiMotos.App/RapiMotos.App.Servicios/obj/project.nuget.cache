@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "evJObrr6HbfHwTAzpRjdsuWtDSd4I0JbZJXCThOXZbHaerocKCTUcdjw0fOU7y4z75327swJdJkcehXxZg1HYg==",
+  "success": true,
+  "projectFilePath": "/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Servicios/RapiMotos.App.Servicios.csproj",
+  "expectedPackageFiles": [
+    "/home/jk10s/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/jk10s/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/jk10s/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/jk10s/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/jk10s/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/jk10s/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
