@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RapiMotos.App.Dominio.Entidades
+namespace RapiMotos.App.Dominio
 {
     public class HitorialTecnico
     {

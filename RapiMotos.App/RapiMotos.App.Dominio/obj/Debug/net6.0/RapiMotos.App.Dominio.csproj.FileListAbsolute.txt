@@ -1,0 +1,12 @@
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/bin/Debug/net6.0/RapiMotos.App.Dominio.deps.json
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/bin/Debug/net6.0/RapiMotos.App.Dominio.dll
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/bin/Debug/net6.0/RapiMotos.App.Dominio.pdb
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/obj/Debug/net6.0/RapiMotos.App.Dominio.csproj.AssemblyReference.cache
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/obj/Debug/net6.0/RapiMotos.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/obj/Debug/net6.0/RapiMotos.App.Dominio.AssemblyInfoInputs.cache
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/obj/Debug/net6.0/RapiMotos.App.Dominio.AssemblyInfo.cs
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/obj/Debug/net6.0/RapiMotos.App.Dominio.csproj.CoreCompileInputs.cache
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/obj/Debug/net6.0/RapiMotos.App.Dominio.dll
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/obj/Debug/net6.0/refint/RapiMotos.App.Dominio.dll
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/obj/Debug/net6.0/RapiMotos.App.Dominio.pdb
+/home/jk10s/Documentos/misiontic/caldas/ciclo3/progrmacion/RapiMotos/RapiMotos.App/RapiMotos.App.Dominio/obj/Debug/net6.0/ref/RapiMotos.App.Dominio.dll
