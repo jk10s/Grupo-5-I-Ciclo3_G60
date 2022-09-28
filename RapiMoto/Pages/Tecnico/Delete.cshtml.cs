@@ -7,8 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RapiMoto.Models;
 
+using Microsoft.AspNetCore.Authorization;
+
 namespace RapiMoto.Pages_Tecnico
 {
+    [Authorize]
     public class DeleteModel : PageModel
     {
         private readonly RazorPagesTecnicoContext _context;

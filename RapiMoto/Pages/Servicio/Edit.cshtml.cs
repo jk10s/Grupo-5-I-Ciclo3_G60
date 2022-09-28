@@ -8,8 +8,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RapiMoto.Models;
 
+using Microsoft.AspNetCore.Authorization;
+
 namespace RapiMoto.Pages_Servicio
 {
+    [Authorize]
     public class EditModel : PageModel
     {
         private readonly RazorPagesTecnicoContext _context;

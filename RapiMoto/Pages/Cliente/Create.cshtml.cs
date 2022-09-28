@@ -7,8 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RapiMoto.Models;
 
+using Microsoft.AspNetCore.Authorization;
+
 namespace RapiMoto.Pages_Cliente
 {
+    [Authorize]
     public class CreateModel : PageModel
     {
         private readonly RazorPagesTecnicoContext _context;

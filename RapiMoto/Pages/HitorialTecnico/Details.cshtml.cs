@@ -7,8 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RapiMoto.Models;
 
+using Microsoft.AspNetCore.Authorization;
+
 namespace RapiMoto.Pages_HitorialTecnico
 {
+    [Authorize]
     public class DetailsModel : PageModel
     {
         private readonly RazorPagesTecnicoContext _context;

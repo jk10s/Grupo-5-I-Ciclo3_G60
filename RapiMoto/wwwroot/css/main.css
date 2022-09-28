@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*---------------MENU-------------*/
+#menu a, button{
+    font-size:20px !important;
+    font-weight: 600;
+}
+
+#menu a {
+    color: #3f3f3f;
+}
+.carousel-inner {
+    max-height: 39rem !important;
+}
+@media (max-width:768px){
+    #intro, #Tecnico{
+        width: 90% !important;
+        margin:auto;
+    }
+}

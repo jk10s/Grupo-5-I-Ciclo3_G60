@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 
 namespace RapiMoto.Pages_Tecnico
-{   //[Authorize]
+{   [Authorize]
     public class IndexModel : PageModel
     {
         
