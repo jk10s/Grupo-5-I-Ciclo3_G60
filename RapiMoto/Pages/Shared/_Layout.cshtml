@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RapiMoto</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/RapiMoto.styles.css" asp-append-version="true" />
+
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+    <!-- Custom styles for this template-->
+    <link href="~/css/sb-admin-2.css" rel="stylesheet">
+    <link href="~/vendor/toastr/toastr.min.css" rel="stylesheet">
+    <link href="~/vendor/sweetalert/sweetalert.css" rel="stylesheet">
+    @await RenderSectionAsync("Estilos", required: false)
+</head>
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+             
+             <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+                <div class="sidebar-brand-icon">
+                    <i class="fas fa-motorcycle"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">RapiMotos</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            
+              <!-- Nav Item - Dashboard -->
+              <li class="nav-item">
+                
+                    <partial name="_LoginPartial" />
+                    
+                </a>
+                
+              </li>
+           <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Administración Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAdministracion">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Administración</span>
+                </a>
+                <div id="collapseAdministracion" class="collapse" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Administrador/Index">Administrador</a>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Cliente/Index">Cliente</a>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/TipoServicio/Index">TipoServicio</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Inventario Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventario">
+                    <i class="fas fa-fw fa-clipboard-list"></i>
+                    <span>Servicio</span>
+                </a>
+                <div id="collapseInventario" class="collapse" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Servicio/Index">SolicitarServicio</a>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Servicio/Index">Historial Servicios</a>
+                        <a class="collapse-item" href="@Url.Action("index","servici")">Solicitar Servicio</a>
+                        
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Venta Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVenta">
+                    <i class="fas fa-fw fa-tags"></i>
+                    <span>Tecnico</span>
+                </a>
+                <div id="collapseVenta" class="collapse" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Tecnico/Index">Tecnico</a>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/HitorialTecnico/Index">Historial Tecnico</a>                        
+                        <a class="collapse-item" asp-area="" asp-controller="Tecnico" asp-action="Index">Nueva Tecnico</a>
+                        
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Reportes Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReportes">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Acceso</span>
+                </a>
+                <div id="collapseReportes" class="collapse" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <partial name="_LoginPartial" />
+                    </div>
+                </div>
+            </li>
+            
+             
+            
+
+        </ul>
+        
+        <!-- End of Sidebar -->     
+
+
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - RapiMoto - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+       <!-- End of Page Wrapper -->
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="~/js/sb-admin-2.js"></script>
+    <script src="~/vendor/toastr/toastr.min.js"></script>
+    <script src="~/vendor/sweetalert/sweetalert.js"></script>
+    <script src="~/vendor/loadingoverlay/loadingoverlay.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,79 @@
+@page
+@model RapiMoto.Pages_Tecnico.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Crear Nuevo Tecnico</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tecnico[0].Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tecnico[0].Apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tecnico[0].NumeroTelefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tecnico[0].Registro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tecnico[0].Disponibilidad)
+            </th>
+            <td> lenguaje </td>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Tecnico) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroTelefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Registro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Disponibilidad)
+            </td>
+            
+            <td>
+                <form action="#">
+      
+      <select name="lenguajes" id="lang">
+        <option value="javascript">JavaScript</option>
+        <option value="php">PHP</option>
+        <option value="java">Java</option>
+        <option value="golang">Golang</option>
+        <option value="python">Python</option>
+        <option value="c#">C#</option>
+        <option value="C++">C++</option>
+        <option value="erlang">Erlang</option>
+      </select>
+      
+</form>
+
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Detalle</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

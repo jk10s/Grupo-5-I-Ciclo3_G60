@@ -1,0 +1,34 @@
+dotnet new webapp --auth Individual -uld -o RapiMoto
+dotnet ef database update
+modificacion del archivo program.cs
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet tool install -g dotnet-aspnet-codegenerator
+dotnet aspnet-codegenerator identity -dc RapiMoto.Data.ApplicationDbContext --files "Account.Register;Account.Login;Account.Logout;Account.RegisterConfirmation"
+
+dotnet tool install -g dotnet-aspnet-codegenerator
+dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+
+dotnet-aspnet-codegenerator razorpage -m Movie -dc RazorPagesMovieContext -udl -outDir Pages/Movies --referenceScriptLibraries
+dotnet-aspnet-codegenerator razorpage -m Tecnico -dc RazorPagesTecnicoContext -udl -outDir Pages/Tecnico --referenceScriptLibraries
+dotnet-aspnet-codegenerator razorpage -m TipoServicio -dc RazorPagesTecnicoContext -udl -outDir Pages/TipoServicio --referenceScriptLibraries
+dotnet-aspnet-codegenerator razorpage -m Administrador -dc RazorPagesTecnicoContext -udl -outDir Pages/Administrador --referenceScriptLibraries
+dotnet-aspnet-codegenerator razorpage -m Cliente -dc RazorPagesTecnicoContext -udl -outDir Pages/Cliente --referenceScriptLibraries
+dotnet-aspnet-codegenerator razorpage -m HistorialCliente -dc RazorPagesTecnicoContext -udl -outDir Pages/HistorialCliente --referenceScriptLibraries
+dotnet-aspnet-codegenerator razorpage -m HitorialTecnico -dc RazorPagesTecnicoContext -udl -outDir Pages/HitorialTecnico --referenceScriptLibraries
+dotnet-aspnet-codegenerator razorpage -m Servicio -dc RazorPagesTecnicoContext -udl -outDir Pages/Servicio --referenceScriptLibraries
+dotnet-aspnet-codegenerator razorpage -m TipoAdmin -dc RazorPagesTecnicoContext -udl -outDir Pages/TipoAdmin --referenceScriptLibraries
+
+dotnet ef migrations add Inicial02 -c RazorPagesTecnicoContext   //crear las migraciones sore un AppDBContext en especifico
+dotnet ef database update -c RazorPagesTecnicoContext
+
+
+dotnet-aspnet-codegenerator controller -name NOMBREDELCONTROLER -m NOMBREDELASVITAS -dc AppDBContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
+
+
+using Microsoft.AspNetCore.Authorization; // paquete para dar autorizacion
+
+dotnet watch run
